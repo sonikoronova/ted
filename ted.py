@@ -18,7 +18,8 @@ for key in d:
     l[d[key]] = a
 
 for i in range (len(l)):
-    print('Эти темы встретились', i, 'раз(а):', l[i][0:])
+    if (len(l[i]) > 1):
+        print('Эти темы встретились', i, 'раз(а):', l[i][1:])
 
 
         
